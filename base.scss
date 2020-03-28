@@ -1,0 +1,63 @@
+/* Author: gdream@126.com */
+
+$zero: 0;
+$nothing: none;
+
+$pink: #f3e1e1;
+$girlpink: #f3c6c3;
+$yellow: #f2e3b3;
+$purple: #8e44ad;
+$beatuifulpurple: #e3e1fc;
+$lightpurple: #D6A2E8;
+$grass: #84edcd;
+$green: #B3F2C0;
+$deepgreen: #16a085;
+$cyan: #80cbcf;
+$blue: #4323ff;
+$lightblue: #8d90cb;
+$deepblue: #463d7a;
+$darkblue: #2e2b3f;
+$orange: #f19066;
+$lightorange: #fab1a0;
+$red: #e74c3c;
+$heatred: #F93429;
+$lightred: #ff6b81;
+$grey: #3c3f41;
+$black: #000000;
+$beautifulblack: #272d28;
+$white: #ffffff;
+$ricewhite: #f9f5e9;
+$pinkwhite: #e3d8d7;
+
+
+@mixin mp() {
+margin: $zero;
+padding: $zero;
+}
+@mixin cleanborderoutline() {
+border: $nothing;
+outline: $nothing;
+}
+@mixin userselect() {
+user-select: $nothing;
+-moz-user-select: $nothing;
+-ms-user-select: $nothing;
+-webkit-user-select: $nothing;
+}
+@mixin flexs($align, $justify, $direction) {
+display: flex;
+align-items: $align;
+justify-content: $justify;
+flex-direction: $direction;
+-ms-flex-direction: $direction;
+-webkit-flex-direction: $direction;
+}
+
+html, body {
+  @include mp;
+  background-color: $darkblue;
+}
+
+#main {
+
+}
